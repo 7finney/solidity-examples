@@ -1,6 +1,6 @@
 pragma solidity >=0.5.0 <0.6.0;
 
-/**
+
 contract ClientReceipt {
     event Deposit(
         address indexed _from,
@@ -16,13 +16,4 @@ contract ClientReceipt {
         // the JavaScript API by filtering for `Deposit`.
         emit Deposit(msg.sender, _id, msg.value);
     }
-}
-**/
-contract Eventc {
-
-  event Top(string yolo);
-
-  function event_testing() public {
-    emit Top('Hello');
-  }
 }
