@@ -1,8 +1,12 @@
 # Solidity examples using Etheratom
 ### Index
-[Goerli Configuration]()
-[Etheratom installation]()
-[Compilation and Deployment in Etheratom]()
+1. [Goerli Configuration]()
+2. [Etheratom installation]()
+3. [Compilation and Deployment in Etheratom]()
+4. [Greeter contract]()
+5. [Payable contract]()
+6. [Unit testing smart contracts with `remix-tests`]()
+7. [OpenZepplin examples]()
 
 
 ##### **Compilation**
