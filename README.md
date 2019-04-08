@@ -1,6 +1,6 @@
 # Solidity examples using Etheratom
 ### Index
-1. [Goerli Testnet Configuration and Etheratom installation]()
+1. [Goerli Testnet Configuration and Etheratom installation](docs/goerli_configuration.md)
 2. [Compilation and Deployment in Etheratom]()
 3. [Greeter contract]()
 4. [Payable contract]()

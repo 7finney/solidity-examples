@@ -1,4 +1,4 @@
-## **sample Token**
+## **Sample Token**
 
 Very simple ERC20 Token example, where all tokens are pre-assigned to the creator.
 > Note they can later distribute these tokens as they wish using `transfer` and other `ERC20` functions.
@@ -24,3 +24,7 @@ You can approve a specific account holder with fixed number of token by entering
 You can increase the allowance of approved account by using **increaseAllowance** function.
 
 ![approve](https://user-images.githubusercontent.com/9979182/55704767-a1a2ae00-59fa-11e9-978e-0382274e819a.png)
+
+Using **transferFrom** function you can also transfer token to another account.
+
+![transferFrom](https://user-images.githubusercontent.com/9979182/55726639-e8f66200-5a2d-11e9-85ea-a5dbdf0480af.png)
