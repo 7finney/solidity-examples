@@ -8,11 +8,6 @@ contract Payable {
     );
 
     function deposit() public payable {
-        // Events are emitted using `emit`, followed by
-        // the name of the event and the arguments
-        // (if any) in parentheses. Any such invocation
-        // (even deeply nested) can be detected from
-        // the JavaScript API by filtering for `Deposit`.
         vault[msg.sender] = msg.value;
         emit Deposit(msg.sender, msg.value);
     }

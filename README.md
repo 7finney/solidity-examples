@@ -1,25 +1,8 @@
 # Solidity examples using Etheratom
 ### Index
-1. [Goerli Configuration]()
-2. [Etheratom installation]()
-3. [Compilation and Deployment in Etheratom]()
-4. [Greeter contract]()
-5. [Payable contract]()
-6. [Unit testing smart contracts with `remix-tests`]()
-7. [OpenZepplin examples]()
-
-
-##### **Compilation**
-  1. Open a contract.
-  2. `Ctrl + s` to save and compile the contract.
-
-![Compiled contract](https://user-images.githubusercontent.com/9979182/55233599-17668700-524f-11e9-9e12-08b511ef2e24.png)
-
-##### **Deployment**
-You need to provide enough gas for contract execution.
-Click on "Deploy to Blockchain" to deploy the contract on the test network.
-
-![Deployment](https://user-images.githubusercontent.com/9979182/55330119-e637c200-54ad-11e9-9e1a-8fc0a429cd44.png)
-
-##### Deployed contract
-![Deployed contract](https://user-images.githubusercontent.com/9979182/55330234-28610380-54ae-11e9-810e-93dbc221979f.png)
+1. [Goerli Testnet Configuration and Etheratom installation]()
+2. [Compilation and Deployment in Etheratom]()
+3. [Greeter contract]()
+4. [Payable contract]()
+5. [Unit testing smart contracts with `remix-tests`]()
+6. [OpenZepplin examples]()

@@ -1,4 +1,8 @@
+# Etheratom installation
+[Etheratom installation](https://github.com/0mkara/etheratom#installation)
+
 # Goerli Testnet Configuration with Etheratom
+
   1. Install geth & eth
 ```
 sudo apt-get install software-properties-common
