@@ -25,8 +25,12 @@ geth account new
 ```
 ./build/bin/geth --goerli --rpc --rpcaddr=YOUR_LOCAL_IP --rpcapi="eth,web3,personal" --ws --wsaddr=YOUR_LOCAL_IP --wsorigins="*" --wsapi="eth,web3,personal" --keystore YOUR_KEYSTORE_PATH console
 ```
-** Default keystore path: ~/.ethereum/keystore
+>  Default keystore path: ~/.ethereum/keystore
 
+Note: If there is any issue with block synchronization, you need to delete the **geth chaindata** and reinitialize the foerli test network.
+```
+rm -rf /home/USER_NAME/.ethereum/goerli/geth/chaindata
+```
 
 6. Connection with Etheratom:
 ```
