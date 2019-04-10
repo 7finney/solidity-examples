@@ -6,5 +6,5 @@
 4. [Payable contract](payable/README.md)
 5. [Unit testing smart contracts with `remix-tests`]()
 6. **OpenZepplin examples**\
-  i.  [Ownership](OpenZepplin_Contracts/ownership/README.md)\
+  i.  [Ownership](OpenZepplin_Contracts/Ownership/README.md)\
   ii. [Sample Token](OpenZepplin_Contracts/SampleToken/README.md)  
