@@ -5,6 +5,6 @@
 3. [Greeter contract](greeter/README.md)
 4. [Payable contract](payable/README.md)
 5. [Unit testing smart contracts with `remix-tests`]()
-6. **OpenZepplin examples**\
+6. **OpenZepplin contract examples**\
   i.  [Ownership](OpenZepplin_Contracts/Ownership/README.md)\
   ii. [Sample Token](OpenZepplin_Contracts/SampleToken/README.md)  
