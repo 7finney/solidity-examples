@@ -6,7 +6,7 @@
 4. [Event contract](event/README.md)
 5. [Payable contract](payable/README.md)
 6. **Unit testing smart contracts with `remix-tests`**\
-      i.  [Simple Storage](UnitTesting/simple storage/README.md)\
+      i.  [Simple Storage](UnitTesting/simple_storage/README.md)\
       ii. [String](UnitTesting/string/README.md)
 7. **OpenZepplin contract examples**\
      i.  [Ownership](OpenZepplin_Contracts/Ownership/README.md)\
