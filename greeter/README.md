@@ -9,11 +9,11 @@ This is a simple Greeting contract.
   ![compilation](https://user-images.githubusercontent.com/9979182/55880256-f2163900-5bbd-11e9-8283-52eb72e768b4.png)
 
 
-> You'll notice that there are two different contracts in this code: *"Mortal"* and *"Greeter"*.
->
-> This is because Solidity (the high level contract language we are using) has inheritance, meaning that one contract can inherit characteristics of another.
->
-> This is very useful to simplify coding as common traits of contracts don't need to be rewritten every time, and all contracts can be written in smaller, more readable chunks.
+* You'll notice that there are two different contracts in this code: *"Mortal"* and *"Greeter"*.
+
+* This is because Solidity (the high level contract language we are using) has inheritance, meaning that one contract can inherit characteristics of another.
+
+* This is very useful to simplify coding as common traits of contracts don't need to be rewritten every time, and all contracts can be written in smaller, more readable chunks.
 
 ##### **Deployment**
 * Set the string to **Hello World** and supply enough gas to the contract to be executed.
