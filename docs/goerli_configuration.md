@@ -34,5 +34,5 @@ rm -rf /home/USER_NAME/.ethereum/goerli/geth/chaindata
 
 6. Connection with Etheratom:
 
-Rpc endpoint: `http://192.168.0.6:8545/`/  
+Rpc endpoint: `http://192.168.0.6:8545/`  
 Websocket endpoint: `ws://192.168.0.6:8546/`
