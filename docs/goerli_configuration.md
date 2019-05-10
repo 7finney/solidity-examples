@@ -41,3 +41,8 @@ Websocket endpoint: `ws://YOUR_LOCAL_IP:8546/`
 ```
 ./build/bin/geth --goerli --rpc --rpcaddr=YOUR_LOCAL_IP --rpcapi="eth,web3,personal" --ws --wsaddr=YOUR_LOCAL_IP --wsorigins="*" --wsapi="eth,web3,personal" --keystore YOUR_KEYSTORE_PATH console --allow-insecure-unlock
 ```
+
+**** To enable CORS add the folowing flag to your command `--rpccorsdomain "http://localhost:4200"`. So the full command will be
+```
+./build/bin/geth --goerli --rpc --rpcaddr=YOUR_LOCAL_IP --rpcapi="eth,web3,personal" --ws --wsaddr=YOUR_LOCAL_IP --wsorigins="*" --wsapi="eth,web3,personal" --keystore YOUR_KEYSTORE_PATH console --allow-insecure-unlock --rpccorsdomain "http://localhost:4200"
+```
