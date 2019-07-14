@@ -1,5 +1,5 @@
 pragma solidity ^0.5.0;
-import "simple_storage.sol";
+import "./simple_storage.sol";
 
 contract StorageTest {
     SimpleStorage foo;
