@@ -34,5 +34,15 @@ rm -rf /home/USER_NAME/.ethereum/goerli/geth/chaindata
 
 6. Connection with Etheratom:
 
-Rpc endpoint: `http://192.168.0.6:8545/`  
-Websocket endpoint: `ws://192.168.0.6:8546/`
+Rpc endpoint: `http://YOUR_LOCAL_IP:8545/`  
+Websocket endpoint: `ws://YOUR_LOCAL_IP:8546/`
+
+**** incase of `account unlock with HTTP access is forbidden when unlock an account` this error use the following flag with the command specified in step 5 `--allow-insecure-unlock`. So the full command will be 
+```
+./build/bin/geth --goerli --rpc --rpcaddr=YOUR_LOCAL_IP --rpcapi="eth,web3,personal" --ws --wsaddr=YOUR_LOCAL_IP --wsorigins="*" --wsapi="eth,web3,personal" --keystore YOUR_KEYSTORE_PATH console --allow-insecure-unlock
+```
+
+**** To enable CORS add the folowing flag to your command `--rpccorsdomain "http://localhost:4200"`. So the full command will be
+```
+./build/bin/geth --goerli --rpc --rpcaddr=YOUR_LOCAL_IP --rpcapi="eth,web3,personal" --ws --wsaddr=YOUR_LOCAL_IP --wsorigins="*" --wsapi="eth,web3,personal" --keystore YOUR_KEYSTORE_PATH console --allow-insecure-unlock --rpccorsdomain "http://localhost:4200"
+```
