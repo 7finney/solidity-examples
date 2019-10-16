@@ -1,14 +1,10 @@
-# Sample Solidity Code
+# Solidity Array Examples
 
-## Sample Code with Solidity 2D array
+## Simple array
 
-The Code is written with Solidity and will only compile using version 0.5.0 and later.
+## Multidimensional 2D array
 
-## Purpose
-
-To show few of the use of solidity arrays.
-
-### 1. Declaration
+### 1. Array Variable Declaration
 
 Solidity supports fixed sized and dynamic array declaration.
 
@@ -21,7 +17,7 @@ uint [][] dynamicArr;    // dynamic array with dynamic array elements.
 
 ### 2. Accessing array elements
 
-Array elements can be accessed with indices.
+Array elements can be accessed with indices - `fixedSized[i][j]`;
 
 ### 3. Array input and output
 
@@ -45,5 +41,25 @@ function getFixedSized() public view returns (uint[3][3] memory){
 
 function getDynamicArray() public view returns (uint[3][] memory){
     return dynamicArray;
+}
+```
+
+With ABIEncoderV2 we can access arrays like:
+
+```Solidity
+function setArrayDynamic(uint[][3] memory inputArr) public {
+    arrayDynamic = inputArr;
+}
+
+function setDynamicArr(uint[][] memory inputArr) public {
+    dynamicArr = inputArr;
+}
+
+function getArrayDynamic() public view returns (uint[][3] memory){
+    return arrayDynamic;
+}
+
+function getDynamicArr() public view returns (uint[][] memory){
+    return dynamicArr;
 }
 ```
