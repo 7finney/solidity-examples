@@ -25,7 +25,7 @@ Array elements can be accessed with indices - `fixedSized[i][j]`;
 ### 3. Array input and output
 
 Solidity supports array inputs and output by passing to and returning array from a function.
-But dynamic arrays can't be passed or return from an array. The error says:
+But dynamic arrays can't be passed to or return from an array. The error says:
 `TypeError: This type is only supported in the new experimental ABI encoder.`
 In order to use it, it is necessary to include `pragma experimental "ABIEncoderV2";`. Using `ABIEncoderV2` we would get warning saying "Do not use experimental features on live deployments".
 
