@@ -6,7 +6,7 @@ contract Array {
     uint[3][3] public fixedSized;   // fixed sized array
     uint[][3] arrayDynamic;  // dynamic array with each element an array with 3
     uint[3][] dynamicArray;  // fixed sized array with each element a dynamic
-    uint [][] dynamicArr;    // dynamic array with dynamic array elemnts.
+    uint[][] dynamicArr;    // dynamic array with dynamic array elemnts.
     constructor () public {
       uint j;
       for (uint i=0;i<3;i++){
@@ -23,7 +23,7 @@ contract Array {
       dynamicArray[2] = [9,0];
     }
 
-    function setFixedSized(uint[3][3] memory inputArr) public{
+    function setFixedSized(uint[3][3] memory inputArr) public {
         fixedSized = inputArr;
     }
 
@@ -41,37 +41,37 @@ contract Array {
         dynamicArr = inputArr;
     }
 
-    function getFixedSized() public view returns (uint[3][3] memory){
+    function getFixedSized() public view returns (uint[3][3] memory) {
         return fixedSized;
     }
 
-    function getDynamicArray() public view returns (uint[3][] memory){
+    function getDynamicArray() public view returns (uint[3][] memory) {
         return dynamicArray;
     }
 
     // This function is illegal
-    function getArrayDynamic() public view returns (uint[][3] memory){
+    function getArrayDynamic() public view returns (uint[][3] memory) {
         return arrayDynamic;
     }
 
     // This function is illegal
-    function getDynamicArr() public view returns (uint[][] memory){
+    function getDynamicArr() public view returns (uint[][] memory) {
         return dynamicArr;
     }
 
-    function getElementFixedSized(uint i, uint j) public view returns(uint){
+    function getElementFixedSized(uint i, uint j) public view returns(uint) {
       return fixedSized[i][j];
     }
 
-    function getElementDynamicArray (uint i, uint j) public view returns(uint){
+    function getElementDynamicArray (uint i, uint j) public view returns(uint) {
       return dynamicArray[i][j];
     }
 
-    function getElementArrayDynamic (uint i, uint j) public view returns(uint){
+    function getElementArrayDynamic (uint i, uint j) public view returns(uint) {
       return arrayDynamic[i][j];
     }
 
-    function getElementDynamicArr (uint i, uint j) public view returns(uint){
+    function getElementDynamicArr (uint i, uint j) public view returns(uint) {
       return dynamicArr[i][j];
     }
 }
