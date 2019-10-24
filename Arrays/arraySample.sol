@@ -3,8 +3,8 @@ pragma experimental "ABIEncoderV2";
 
 contract Arrays {
 
-    uint[3] fixedSimpleArr;  // fixed sized normal array
-    uint[] simpleDynamicArr; // dynamic normal array
+    uint[3] fixedSimpleArr;  // array of fix size
+    uint[] simpleDynamicArr; // dynamic array
     uint[3][3] fixedSized;   // fixed sized array
     uint[][3] arrayDynamic;  // dynamic array with each element an array with 3
     uint[3][] dynamicArray;  // fixed sized array with each element a dynamic
