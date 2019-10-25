@@ -3,9 +3,9 @@ pragma experimental "ABIEncoderV2";
 
 contract Arrays {
 
-    uint[3] fixedSimpleArr;
-    uint[] simpleDynamicArr;
-    uint[3][3] fixedSized;   // fixed sized array
+    uint[3] fixedSimpleArr;  // fixed sized array
+    uint[] simpleDynamicArr; // dynamic array
+    uint[3][3] fixedSized;   // fixed sized 2D array
     uint[][3] arrayDynamic;  // dynamic array with each element an array with 3
     uint[3][] dynamicArray;  // fixed sized array with each element a dynamic
     uint[][] dynamicArr;    // dynamic array with dynamic array elemnts.
@@ -61,12 +61,12 @@ contract Arrays {
         threeDArr = inputArr;
     }
 
-    function getFixedSimpleArr(uint[3] memory simpleArr) public {
-      fixedSimpleArr = simpleArr;
+    function getFixedSimpleArr() public view returns (uint[3] memory) {
+      return fixedSimpleArr;
     }
 
-    function getSimpleDynamicArr(uint[] memory simpleArr) public {
-      simpleDynamicArr = simpleArr;
+    function getSimpleDynamicArr() public view returns (uint[] memory) {
+      return simpleDynamicArr;
     }
 
     function getFixedSized() public view returns (uint[3][3] memory) {
@@ -91,13 +91,13 @@ contract Arrays {
         return threeDArr;
     }
 
-    function getElementFixedSimpleArr() public view returns (uint[3] memory) {
-      return fixedSimpleArr;
+    function getElementFixedSimpleArr(uint i) public view returns (uint) {
+      return fixedSimpleArr[i];
     }
 
     // This function is illegal
-    function getElementSimpleDynamicArr() public view returns (uint[] memory) {
-      return simpleDynamicArr;
+    function getElementSimpleDynamicArr(uint i) public view returns (uint) {
+      return simpleDynamicArr[i];
     }
 
     function getElementFixedSized(uint i, uint j) public view returns (uint) {
