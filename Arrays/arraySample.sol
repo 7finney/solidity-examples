@@ -3,9 +3,9 @@ pragma experimental "ABIEncoderV2";
 
 contract Arrays {
 
-    uint[3] fixedSimpleArr;  // array of fix size
+    uint[3] fixedSimpleArr;  // fixed sized array
     uint[] simpleDynamicArr; // dynamic array
-    uint[3][3] fixedSized;   // fixed sized array
+    uint[3][3] fixedSized;   // fixed sized 2D array
     uint[][3] arrayDynamic;  // dynamic array with each element an array with 3
     uint[3][] dynamicArray;  // fixed sized array with each element a dynamic
     uint[][] dynamicArr;    // dynamic array with dynamic array elemnts.
@@ -61,11 +61,11 @@ contract Arrays {
         threeDArr = inputArr;
     }
 
-    function getFixedSimpleArr() public view returns (uint[3] memory){
+    function getFixedSimpleArr() public view returns (uint[3] memory) {
       return fixedSimpleArr;
     }
 
-    function getSimpleDynamicArr() public view returns (uint[] memory){
+    function getSimpleDynamicArr() public view returns (uint[] memory) {
       return simpleDynamicArr;
     }
 
