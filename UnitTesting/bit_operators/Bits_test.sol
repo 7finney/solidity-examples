@@ -3,7 +3,7 @@ import "./Bits.sol";
 
 contract bitsTest {
     using Bits for *;
-    // using Bits for uint8;
+    
     function setBitTest() public {
         uint a = 35; // 35 in binary 00100011 and 01100011 is 99
         Assert.equal(a.setBit(6), 99, "working");

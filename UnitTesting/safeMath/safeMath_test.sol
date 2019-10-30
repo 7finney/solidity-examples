@@ -6,6 +6,7 @@ contract safeMathTest {
 
     uint i = 2**254 - 2;
     uint j = 2;
+    
     function addTest() public returns(bool) {
         return Assert.equal(i.add(j), 2**254, "working");
     }
@@ -25,5 +26,4 @@ contract safeMathTest {
     function modTest() public returns(bool) {
         return Assert.equal(i.mod(j), 0, "working");
     }
-
 }

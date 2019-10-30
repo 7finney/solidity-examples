@@ -1,12 +1,13 @@
 pragma solidity ^0.5.0;
 
-library stringUtils{
+library stringUtils {
 
     function stringToUint(string memory str) public view returns(uint) {
         bytes memory strBytes = bytes(str);
         uint res = 0;
         uint pow = 10;
         bytes4 temp;
+        
         for(uint i = 0; i < strBytes.length; i++) {
             res *= pow;
             temp = bytes4(strBytes[i]) >> 24;
@@ -31,11 +32,14 @@ library stringUtils{
        bytes memory str_b = new bytes(str_1.length + str_2.length);
        uint i = 0;
        uint j = 0;
-       while (i < str_1.length){
+       
+       while (i < str_1.length) {
            str_b[j++] = str_1[i++];
        }
+       
        i=0;
-       while (i < str_2.length){
+       
+       while (i < str_2.length) {
            str_b[j++] = str_2[i++];
        }
        return string(str_b);
