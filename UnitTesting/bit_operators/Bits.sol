@@ -108,5 +108,4 @@ library Bits {
             }
         }
     }
-
 }
