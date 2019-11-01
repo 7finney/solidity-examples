@@ -25,6 +25,22 @@ library stringUtils{
       return bytes(str).length;
    }
 
+   function charAt(string memory str, uint indx) public view returns(string memory) {
+       bytes memory temp = bytes(str);
+       bytes memory charTemp = new bytes(1);
+       charTemp[0] = temp[indx];
+       return string(charTemp);
+   }
+
+   function substring(string memory str, uint i, uint j) public view returns(string memory) {
+       bytes memory charTemp = new bytes(j-i);
+       uint k = 0;
+       for (uint l = i; l<j; l++) {
+           charTemp[k++] = bytes(str)[l];
+       }
+       return string(charTemp);
+   }
+
    function stringConcat(string memory str1, string memory str2) public view returns (string memory) {
        bytes memory str_1 = bytes(str1);
        bytes memory str_2 = bytes(str2);
