@@ -21,6 +21,16 @@ contract strTest {
         Assert.equal(str.stringLen(), 11, "working");
     }
 
+    function stringCharAtTest() public {
+        string memory str = "hello World";
+        Assert.equal(str.charAt(0), "h", "working");
+    }
+
+    function stringSubstringTest() public {
+        string memory str = "hello World";
+        Assert.equal(str.substring(1,7), "ello W", "working");
+    }
+
     function stringConcat() public {
         string memory str_1 = "hello ";
         string memory str_2 = "World";
