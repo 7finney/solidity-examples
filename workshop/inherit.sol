@@ -20,18 +20,23 @@
 //     }
 // }
 
-pragma solidity >=0.4.0 <0.6.0;
 
-contract C {
-    uint public data = 42;
-}
 
-contract Caller {
-    C c = new C();
-    function f() public view returns (uint) {
-        return c.data();
-    }
-}
+// pragma solidity >=0.4.0 <0.6.0;
+
+// contract C {
+//     uint public data = 42;
+// }
+
+// contract Caller {
+//     C c = new C();
+//     function f() public view returns (uint) {
+//         return c.data();
+//     }
+// }
+
+
+
 
 // contract E is C {
 //     function g() public {
@@ -39,3 +44,6 @@ contract Caller {
 //         uint val = compute(3, 5); // access to internal member (from derived to parent contract)
 //     }
 // }
+
+
+
