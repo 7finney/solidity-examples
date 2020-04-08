@@ -2,8 +2,7 @@ pragma solidity ^0.6.0;
 
 import "../openzeppelin-contracts/token/ERC721/ERC721.sol";
 
-contract ERC721BidSale {
-
+contract ERC721BidSale is ERC721{
     address payable _seller;
 
     ERC721 _tokenContract;
@@ -14,7 +13,7 @@ contract ERC721BidSale {
     uint256 _lastBid;
     address payable _lastBidder;
 
-    constructor() public {
+    constructor() ERC721("Silver", "silver") public {
         _seller = msg.sender;
     }
 
