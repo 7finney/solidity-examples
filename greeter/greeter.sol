@@ -3,7 +3,7 @@ import "../mortal/mortal.sol";
 
 contract Greeter is Mortal {
     /* Define variable greeting of the type string */
-    string greeting;
+    string private greeting;
 
     /* This runs when the contract is executed */
     constructor(string memory _greeting) public {
