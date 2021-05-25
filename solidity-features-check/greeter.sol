@@ -1,12 +1,13 @@
 pragma solidity >=0.7.0;
 import "./mortal.sol";
+// SPDX-License-Identifier: GPL-3.0
 
 contract Greeter is Mortal {
     /* Define variable greeting of the type string */
     string greeting;
 
     /* This runs when the contract is executed */
-    constructor(string memory _greeting) public {
+    constructor(string memory _greeting) {
         greeting = _greeting;
     }
 
