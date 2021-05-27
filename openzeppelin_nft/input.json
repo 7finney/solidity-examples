@@ -1,0 +1,17 @@
+{
+  "language": "Solidity",
+  "sources": {
+    "greeter.sol": {
+      "urls": [
+        "file:///home/0mkar/Karma/solidity-examples/openzeppelin_nft/nft.sol"
+      ]
+    }
+  },
+  "settings": {
+    "outputSelection": {
+      "*": {
+        "*": ["*"]
+      }
+    }
+  }
+}

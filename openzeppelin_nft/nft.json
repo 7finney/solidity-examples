@@ -1,0 +1,18 @@
+{
+  "errors": [
+    {
+      "component": "general",
+      "errorCode": "6275",
+      "formattedMessage": "ParserError: Source \"@openzeppelin/contracts/token/ERC721/ERC721.sol\" not found: File outside of allowed directories.\n --> greeter.sol:4:1:\n  |\n4 | import \"@openzeppelin/contracts/token/ERC721/ERC721.sol\";\n  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\n",
+      "message": "Source \"@openzeppelin/contracts/token/ERC721/ERC721.sol\" not found: File outside of allowed directories.",
+      "severity": "error",
+      "sourceLocation": {
+        "end": 114,
+        "file": "greeter.sol",
+        "start": 57
+      },
+      "type": "ParserError"
+    }
+  ],
+  "sources": {}
+}
