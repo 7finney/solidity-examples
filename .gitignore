@@ -1,2 +1,4 @@
 .vscode
 output
+node_modules
+bin
